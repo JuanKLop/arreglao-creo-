@@ -1,0 +1,50 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+    background-color: #bdefbb;
+    font-family: Arial, sans-serif;
+}
+button[type="submit"],
+input[type="submit"] {
+    background-color: #8ecf8d;
+}
+.modal-content {
+    background-color: #d5ffd2;
+    border-radius: 10px; /* Esquinas redondeadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    border: 1px solid #dee2e6; /* Borde fino y discreto */
+    overflow: hidden; /* Asegura que nada sobresalga del contenedor */
+    max-width: 90%; /* Opcional: Limita el ancho en pantallas pequeñas */
+    margin: auto; /* Centra el contenido horizontalmente */
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Animación sutil */
+}
+.modal.fade .modal-content {
+    transform: scale(0.95);
+    opacity: 0;
+}
+
+.modal.show .modal-content {
+    transform: scale(1);
+    opacity: 1;
+}
+.btn.btn-danger {
+    background-color: #fb6c6c;
+}
